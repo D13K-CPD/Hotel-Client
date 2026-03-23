@@ -1,0 +1,48 @@
+<div class="outer">
+  <div class="container">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">bed</mat-icon>
+          Stays
+        </ng-template>
+        <app-stays-context-component />
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">flight_takeoff</mat-icon>
+          Flights
+        </ng-template>
+        <app-flight-context-component />
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">directions_car</mat-icon>
+          Car Rentals
+        </ng-template>
+
+        <app-car-rentals-context-component />
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">kayaking</mat-icon>
+          Activities
+        </ng-template>
+
+        <app-activities-context-component />
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">airport_shuttle</mat-icon>
+          Airport Shuttle
+        </ng-template>
+
+        <app-airport-shuttle-context-component />
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
