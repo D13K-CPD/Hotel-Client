@@ -1,3 +1,7 @@
+.container {
+  margin-top: 20px;
+}
+
 .inner {
   height: auto;
   min-height: 50px;
@@ -132,5 +136,28 @@
   padding: 5px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
+  .inner {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .destination {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .dates {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .visitors {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .search-button {
+    width: 100%;
+  }
 }
