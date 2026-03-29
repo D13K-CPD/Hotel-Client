@@ -1,0 +1,37 @@
+.container {
+  margin-top: 40px;
+}
+
+.inner {
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.slot-1 {
+  background-image: url('https://cf.bstatic.com/xdata/images/city/600x600/685293.jpg?k=799ffc96a5a78c6ed25a9f622dd64617e54e27219c54a828d1830cb3055560db&o=');
+}
+.slot-2 {
+  background-image: url('https://cf.bstatic.com/xdata/images/city/600x600/685330.jpg?k=ee4ac422e47649d2d04a9759dc81fa51f138f477796a8043557e864517ae6f5f&o=');
+}
+.slot-3 {
+  background-image: url('https://cf.bstatic.com/xdata/images/city/600x600/685389.jpg?k=b2ee6ea5ea52888fac4782d1c7959f9aa2572f382ff25a06418b53e735c71e80&o=');
+}
+.slot-4 {
+  background-image: url('https://cf.bstatic.com/xdata/images/city/600x600/685339.jpg?k=cda6f68d7587b0d17790737f0451caf777cf1d8382591a228f303a0e79f9b475&o=');
+}
+.slot-5 {
+  background-image: url('https://cf.bstatic.com/xdata/images/city/600x600/685302.jpg?k=0713219d887bc5ff423f547eaf1d36aa2363a45f3f751610f7f5e553cb233dda&o=');
+}
+
+.outer {
+  margin-bottom: 20px;
+
+  h4 {
+    font-weight: 570;
+    color: var(--light-color);
+    padding: 10px;
+  }
+}
