@@ -23,6 +23,7 @@
   color: (var(--light-color));
   border-radius: 50px;
   padding: 5px, 12px;
+  margin: 0 5px;
 }
 
 .logo {
@@ -30,6 +31,10 @@
   font-weight: 700;
   color: (var(--light-color));
   font-size: 30px;
+}
+
+.tool-outer {
+  display: flex;
 }
 
 @media only screen and (max-width: 470px) {
