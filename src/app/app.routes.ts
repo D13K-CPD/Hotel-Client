@@ -3,6 +3,7 @@ import { HomePage } from './pages/home-page/home-page';
 import { NotFoundPage } from './pages/not-found-page/not-found-page';
 import { SecurityContext } from './pages/security/security-context/security-context';
 import { Login } from './pages/security/login/login';
+import { Signup } from './pages/security/signup/signup';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ export const routes: Routes = [
     children: [
       { path: '', redirectTo: '/security/login', pathMatch: 'full' },
       { path: 'login', component: Login },
+      { path: 'signup', component: Signup },
     ],
   },
   { path: '**', component: NotFoundPage },
