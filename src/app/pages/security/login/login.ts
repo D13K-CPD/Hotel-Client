@@ -3,16 +3,25 @@ import { MatFormField, MatLabel, MatFormFieldModule } from '@angular/material/fo
 import { MatAnchor } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
-export interface Task {
-  name: string;
-  completed: boolean;
-  subtasks?: Task[];
-}
+// export interface Task {
+//   name: string;
+//   completed: boolean;
+//   subtasks?: Task[];
+// }
 
 @Component({
   selector: 'app-login',
-  imports: [MatFormField, MatFormFieldModule, FormsModule, MatAnchor, MatLabel, MatCheckboxModule],
+  imports: [
+    MatFormField,
+    MatFormFieldModule,
+    FormsModule,
+    MatAnchor,
+    MatLabel,
+    MatCheckboxModule,
+    RouterLink,
+  ],
   templateUrl: './login.html',
   styleUrl: './login.scss',
 })
