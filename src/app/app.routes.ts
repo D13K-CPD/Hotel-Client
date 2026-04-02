@@ -4,6 +4,11 @@ import { NotFoundPage } from './pages/not-found-page/not-found-page';
 import { SecurityContext } from './pages/security/security-context/security-context';
 import { Login } from './pages/security/login/login';
 import { Signup } from './pages/security/signup/signup';
+import { RegisterVerification } from './pages/security/register-verification/register-verification';
+import { ForgotPassword } from './pages/security/forgot-password/forgot-password';
+import { ResetPwdVerification } from './pages/security/reset-pwd-verification/reset-pwd-verification';
+import { ResetPassword } from './pages/security/reset-password/reset-password';
+import { Settings } from './pages/settings/settings';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,7 +20,12 @@ export const routes: Routes = [
       { path: '', redirectTo: '/security/login', pathMatch: 'full' },
       { path: 'login', component: Login },
       { path: 'signup', component: Signup },
+      { path: 'forgot-password', component: ForgotPassword },
+      { path: 'register-verification/:email', component: RegisterVerification },
+      { path: 'reset-pwd-verification/:email', component: ResetPwdVerification },
+      { path: 'reset-password', component: ResetPassword },
     ],
   },
+  { path: 'settings', component: Settings },
   { path: '**', component: NotFoundPage },
 ];
