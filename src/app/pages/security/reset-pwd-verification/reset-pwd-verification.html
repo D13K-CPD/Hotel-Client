@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="main-outer">
+    <form>
+      <h3>Verify your email</h3>
+      <div class="row">
+        <div class="col-12">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Enter OTP here</mat-label>
+            <p>Enter OTP here</p>
+            <input matInput placeholder="123456" type="text" />
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 verify-btn">
+          <button mat-raised-button color="tonal" routerLink="/security/reset-password">
+            Verify
+          </button>
+        </div>
+
+        <div class="col-12 signup-btn">
+          <button mat-raised-button color="tonal" routerLink="/security/forgot-password">
+            Change Email
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
