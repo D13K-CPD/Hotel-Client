@@ -4,6 +4,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { Component } from '@angular/core';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-signup',
@@ -15,6 +16,7 @@ import { Component } from '@angular/core';
     MatLabel,
     MatCheckboxModule,
     RouterLink,
+    MatInputModule,
   ],
   templateUrl: './signup.html',
   styleUrl: './signup.scss',
