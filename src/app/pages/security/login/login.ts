@@ -4,6 +4,7 @@ import { MatAnchor } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { MatInputModule } from '@angular/material/input';
 
 // export interface Task {
 //   name: string;
@@ -21,6 +22,7 @@ import { RouterLink } from '@angular/router';
     MatLabel,
     MatCheckboxModule,
     RouterLink,
+    MatInputModule,
   ],
   templateUrl: './login.html',
   styleUrl: './login.scss',
