@@ -12,6 +12,7 @@ import {
   MatDateRangePicker,
   MatDatepickerModule,
 } from '@angular/material/datepicker';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-stays-form-component',
@@ -29,6 +30,7 @@ import {
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
+    RouterLink,
   ],
   templateUrl: './stays-form-component.html',
   styleUrl: './stays-form-component.scss',
