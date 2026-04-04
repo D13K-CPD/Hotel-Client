@@ -1,0 +1,261 @@
+<div class="container">
+  <div class="root">
+    <div class="page-header">
+      <h1>Booking History</h1>
+      <p>All your stays, past and upcoming</p>
+    </div>
+
+    <div class="summary-bar">
+      <div class="summary-chip"><span class="chip-val">8</span> total stays</div>
+      <div class="divider"></div>
+      <div class="summary-chip"><span class="chip-val">24</span> nights</div>
+      <div class="divider"></div>
+      <div class="summary-chip"><span class="chip-val">5</span> countries</div>
+      <div class="divider"></div>
+      <div class="summary-chip"><span class="chip-val">$4,210</span> spent</div>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCards('All', this)">All</button>
+      <button class="filter-btn" onclick="filterCards('Upcoming', this)">Upcoming</button>
+      <button class="filter-btn" onclick="filterCards('Confirmed', this)">Confirmed</button>
+      <button class="filter-btn" onclick="filterCards('Completed', this)">Completed</button>
+      <button class="filter-btn" onclick="filterCards('Cancelled', this)">Cancelled</button>
+    </div>
+
+    <div id="cards-container">
+      <!-- UPCOMING -->
+      <div class="booking-card" data-status="Upcoming">
+        <div class="card-header">
+          <div class="hotel-meta">
+            <div class="hotel-icon">🏝️</div>
+            <div class="hotel-info">
+              <div class="hotel-name">Amanjiwo Resort</div>
+              <div class="hotel-location">
+                <div class="loc-dot"></div>
+                Borobudur, Indonesia
+              </div>
+            </div>
+          </div>
+          <div class="status-pill status-upcoming">Upcoming</div>
+        </div>
+        <div class="card-body">
+          <div class="detail-item">
+            <div class="detail-label">Check-in</div>
+            <div class="detail-value">18 Apr 2026</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Check-out</div>
+            <div class="detail-value">23 Apr 2026</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Duration</div>
+            <div class="detail-value nights">5 nights</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Room type</div>
+            <div class="detail-value">Garden Suite</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Guests</div>
+            <div class="guests-pips">
+              <div class="pip filled"></div>
+              <div class="pip filled"></div>
+              <div class="pip"></div>
+              <div class="pip"></div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Breakfast</div>
+            <div class="detail-value">Included</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="price-section">
+            <span class="price-amount">$2,450</span>
+            <span class="price-note">total · paid</span>
+          </div>
+          <div class="action-btns">
+            <button class="btn-danger">Cancel</button>
+            <button class="btn-ghost">Details</button>
+            <button class="btn-primary">Directions →</button>
+          </div>
+        </div>
+        <div class="ref-id">Booking ref: AMJ-2026-048291</div>
+      </div>
+
+      <!-- CONFIRMED -->
+      <div class="booking-card" data-status="Confirmed">
+        <div class="card-header">
+          <div class="hotel-meta">
+            <div class="hotel-icon">🗼</div>
+            <div class="hotel-info">
+              <div class="hotel-name">Hôtel Particulier Montmartre</div>
+              <div class="hotel-location">
+                <div class="loc-dot"></div>
+                Paris, France
+              </div>
+            </div>
+          </div>
+          <div class="status-pill status-confirmed">Confirmed</div>
+        </div>
+        <div class="card-body">
+          <div class="detail-item">
+            <div class="detail-label">Check-in</div>
+            <div class="detail-value">12 Jun 2026</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Check-out</div>
+            <div class="detail-value">15 Jun 2026</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Duration</div>
+            <div class="detail-value nights">3 nights</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Room type</div>
+            <div class="detail-value">Deluxe Double</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Guests</div>
+            <div class="guests-pips">
+              <div class="pip filled"></div>
+              <div class="pip filled"></div>
+              <div class="pip"></div>
+              <div class="pip"></div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Breakfast</div>
+            <div class="detail-value">Not included</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="price-section">
+            <span class="price-amount">$870</span>
+            <span class="price-note">total · pending</span>
+          </div>
+          <div class="action-btns">
+            <button class="btn-ghost">Modify</button>
+            <button class="btn-primary">View booking →</button>
+          </div>
+        </div>
+        <div class="ref-id">Booking ref: HPM-2026-110744</div>
+      </div>
+
+      <!-- COMPLETED -->
+      <div class="booking-card" data-status="Completed">
+        <div class="card-header">
+          <div class="hotel-meta">
+            <div class="hotel-icon">🌊</div>
+            <div class="hotel-info">
+              <div class="hotel-name">Soneva Jani</div>
+              <div class="hotel-location">
+                <div class="loc-dot"></div>
+                Noonu Atoll, Maldives
+              </div>
+            </div>
+          </div>
+          <div class="status-pill status-completed">Completed</div>
+        </div>
+        <div class="card-body">
+          <div class="detail-item">
+            <div class="detail-label">Check-in</div>
+            <div class="detail-value">02 Jan 2026</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Check-out</div>
+            <div class="detail-value">09 Jan 2026</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Duration</div>
+            <div class="detail-value nights">7 nights</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Room type</div>
+            <div class="detail-value">Overwater Villa</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Your rating</div>
+            <div class="star-row">
+              <div class="star on"></div>
+              <div class="star on"></div>
+              <div class="star on"></div>
+              <div class="star on"></div>
+              <div class="star on"></div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Breakfast</div>
+            <div class="detail-value">Included</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="price-section">
+            <span class="price-amount">$6,300</span>
+            <span class="price-note">total · paid</span>
+          </div>
+          <div class="action-btns">
+            <button class="btn-ghost">Write review</button>
+            <button class="btn-primary">Rebook →</button>
+          </div>
+        </div>
+        <div class="ref-id">Booking ref: SVJ-2026-003918</div>
+      </div>
+
+      <!-- CANCELLED -->
+      <div class="booking-card" data-status="Cancelled">
+        <div class="card-header">
+          <div class="hotel-meta">
+            <div class="hotel-icon">🏔️</div>
+            <div class="hotel-info">
+              <div class="hotel-name">Whitepod Eco-Luxury</div>
+              <div class="hotel-location">
+                <div class="loc-dot"></div>
+                Les Cerniers, Switzerland
+              </div>
+            </div>
+          </div>
+          <div class="status-pill status-cancelled">Cancelled</div>
+        </div>
+        <div class="card-body">
+          <div class="detail-item">
+            <div class="detail-label">Check-in</div>
+            <div class="detail-value">20 Feb 2026</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Check-out</div>
+            <div class="detail-value">24 Feb 2026</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Duration</div>
+            <div class="detail-value nights">4 nights</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Room type</div>
+            <div class="detail-value">Alpine Pod</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Refund</div>
+            <div class="detail-value">$580 returned</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Reason</div>
+            <div class="detail-value">Guest cancelled</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="price-section">
+            <span class="price-amount">$890</span>
+            <span class="price-note">original · refunded</span>
+          </div>
+          <div class="action-btns">
+            <button class="btn-ghost">Rebook</button>
+            <button class="btn-primary">Refund status →</button>
+          </div>
+        </div>
+        <div class="ref-id">Booking ref: WPD-2026-072300</div>
+      </div>
+    </div>
+  </div>
+</div>
