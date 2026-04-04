@@ -1,0 +1,57 @@
+<div class="container">
+  <form>
+    <div class="card" id="card">
+      <div class="avatar-wrap" id="av-wrap" onclick="document.getElementById('file-in').click()">
+        <div class="avatar-ring" id="av-ring">
+          <img id="av-img" alt="profile" />
+          <div class="avatar-placeholder" id="av-ph">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="var(--color-text-tertiary)"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            <span>Upload</span>
+          </div>
+        </div>
+        <div class="cam-btn" id="cam-btn" title="Change photo">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+            />
+            <circle cx="12" cy="13" r="4" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="name" id="uname">Alex Morgan</div>
+      <div class="handle" id="uhandle">@alexmorgan</div>
+
+      <div class="hint">JPG, PNG or GIF · max 5 MB · recommended 400×400 px</div>
+
+      <div class="btn-row">
+        <button class="btn primary" onclick="document.getElementById('file-in').click()">
+          Choose photo
+        </button>
+        <button class="btn danger" id="remove-btn" style="display: none" onclick="removePhoto()">
+          Remove
+        </button>
+      </div>
+
+      <div class="status" id="status"></div>
+      <input type="file" id="file-in" accept="image/*" />
+    </div>
+  </form>
+</div>
