@@ -9,6 +9,7 @@ import { ForgotPassword } from './pages/security/forgot-password/forgot-password
 import { ResetPwdVerification } from './pages/security/reset-pwd-verification/reset-pwd-verification';
 import { ResetPassword } from './pages/security/reset-password/reset-password';
 import { Settings } from './pages/settings/settings';
+import { SearchResult } from './pages/search-result/search-result';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -27,5 +28,6 @@ export const routes: Routes = [
     ],
   },
   { path: 'settings', component: Settings },
+  { path: 'search', component: SearchResult },
   { path: '**', component: NotFoundPage },
 ];
