@@ -1,5 +1,46 @@
 <div class="container">
-  <div class="left-side"></div>
-  <div class="middle"></div>
-  <div class="right-side"></div>
+  <div class="outer">
+    <div class="left-side">
+      <div class="img">
+        <img
+          src="https://cf.bstatic.com/xdata/images/hotel/square240/638256532.webp?k=34f3005085f0854741a2666d805e63d10ec3d96763b2e9f5edec0093bd407662&o="
+          alt="La Maison de Colombo"
+        />
+      </div>
+    </div>
+    <div class="middle">
+      <div class="header">
+        <h4>La Maison de Colombo</h4>
+      </div>
+      <div class="location">
+        <a href="">Colombo</a>
+      </div>
+      <div class="map">
+        <!-- <a href="">Show on map</a> -->
+        <button matButton (click)="openDialog()">Show on map</button>
+        <p>7.1 km from downtown</p>
+      </div>
+      <div class="description">
+        <p>
+          Located in Colombo, 1.5 miles from Wellawatte Beach, La Maison de Colombo has
+          accommodations with an outdoor swimming pool, free private parking, a garden and a
+          terrace.
+        </p>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="top">
+        <div class="top-left">
+          <h5>Wonderful</h5>
+          <p>80 reviews</p>
+        </div>
+        <div class="top-right">
+          <h5>9.3</h5>
+        </div>
+      </div>
+      <div class="bottom">
+        <button>Show prices</button>
+      </div>
+    </div>
+  </div>
 </div>
