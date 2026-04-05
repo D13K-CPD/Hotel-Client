@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { MainHeader } from '../../components/main-header/main-header';
 import { OptionsComponent } from '../../inner-items/options-component/options-component';
 
 @Component({
   selector: 'app-home-page',
-  imports: [MainHeader, OptionsComponent],
+  imports: [OptionsComponent],
   templateUrl: './home-page.html',
   styleUrl: './home-page.scss',
 })
